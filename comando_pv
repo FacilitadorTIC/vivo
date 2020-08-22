@@ -1,0 +1,10 @@
+
+dd if=/dev/archivo_input | pv | dd of=/dev/archivo_output
+
+Como superusuario:
+
+dd if=/dev/unidad_input of=/dev/salida status=progress
+
+Ejemplo copiando 2GB (dejado de lado este ejemplo)
+dd if=/dev/sdb | pv -s 2G | dd of=discocopiado.dd bs=4096
+
